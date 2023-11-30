@@ -19,8 +19,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/products', [PostController::class, 'index'])->name('products.index');
-Route::get('/products', [CategoriesController::class, 'index'])->name('products.categories');
+Route::get('/products/index', [PostController::class, 'index'])->name('products.index');
+Route::get('/products/categories', [CategoriesController::class, 'index'])->name('products.categories');
 
 
 Route::middleware([

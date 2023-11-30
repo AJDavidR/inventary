@@ -28,15 +28,6 @@
                     </tr>
                 </thead>
                 <tbody class="text-black text-center">
-                    @foreach ($categories as $category)
-                        @php
-                            $categoryData = ['id' => $category->id, 'name' => $category->name];
-                        @endphp
-
-                        {{-- Imprime solo id y name --}}
-                        {{ json_encode($categoryData) }}
-                    @endforeach
-
                     @foreach($posts as $post)
                     <tr>
                         

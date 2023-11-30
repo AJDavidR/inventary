@@ -22,14 +22,14 @@
                     </tr>
                 </thead>
                 <tbody class="text-black text-center">
-                    @foreach($posts as $post)
+                    @foreach($categories as $category)
                     <tr>
                         
-                        <td class="border px-4 py-2">{{ $post->id }}</td>
-                        <td class="border px-4 py-2">{{ $post->nombre }}</td>
+                        <td class="border px-4 py-2">{{ $category->id }}</td>
+                        <td class="border px-4 py-2">{{ $category->name }}</td>
                         <td class="border px-2 py-2 flex">
-                        <button wire:click="edit({{ $post->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-0 rounded">Edit</button>
-                        <button wire:click="delete({{ $post->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 ml-2 rounded">Delete</button>
+                        <button wire:click="edit({{ $category->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 ml-0 rounded">Edit</button>
+                        <button wire:click="delete({{ $category->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 ml-2 rounded">Delete</button>
                         </td>
                     </tr>
                     @endforeach
