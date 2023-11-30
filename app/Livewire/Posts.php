@@ -72,6 +72,7 @@ class Posts extends Component
             // ]);
     
             $this->validate();
+
             $imagePath = $this->imagen->store('files', 'public');
 
             $imagePathWithPrefix = 'storage/' . $imagePath;
@@ -98,13 +99,15 @@ class Posts extends Component
     public function edit($id)
     {
         $post = Post::findOrFail($id);
+
+
         $this->post_id = $id;
         $this->codigo = $post->codigo;
         $this->nombre = $post->nombre;
         $this->precio = $post->precio;
         $this->imagen = $post->imagen;
         $this->category_id = $post->category_id;
-
+        // dd($post->all());
         $this->openModal();
     }
 

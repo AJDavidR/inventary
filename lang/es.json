@@ -263,5 +263,16 @@
     "Your email address is unverified.": "Su dirección de correo electrónico no está verificada.",
     "Product Created Successfully":"Producto Creado Correctamente",
     "Product Updated Successfully": "Producto actualizado Correctamente",
-    "Product Deleted Successfully": "Producto eliminado Correctamente"
+    "Product Deleted Successfully": "Producto eliminado Correctamente",
+    "Create New Product": "Crear nuevo Producto",
+    "Create New Category": "Crear Nueva Categoria",
+    "Edit": "Editar",
+    "Categories": "Categorias",
+    "Products": "Productos",
+    "No.":"No.",
+    "Price":"Precio",
+    "Image":"Imagen",
+    "Category":"Categoría",
+    "Options":"Opciones",
+    "Uncategorized": "Sin Categoria"
 }

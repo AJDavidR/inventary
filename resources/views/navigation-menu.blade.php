@@ -121,7 +121,7 @@
                                 @csrf
 
                                 <x-dropdown-link href="{{ route('logout') }}"
-                                         @click.prevent="$root.submit();">
+                                        @click.prevent="$root.submit();">
                                     {{ __('Log Out') }}
                                 </x-dropdown-link>
                             </form>
@@ -148,6 +148,12 @@
             <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            <x-nav-link href="{{ route('products.index') }}" :active="request()->routeIs('products.index')">
+                {{ __('Products') }}
+            </x-nav-link>
+            <x-nav-link href="{{ route('products.categories') }}" :active="request()->routeIs('products.categories')">
+                {{ __('categories') }}
+            </x-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
@@ -182,7 +188,7 @@
                     @csrf
 
                     <x-responsive-nav-link href="{{ route('logout') }}"
-                                   @click.prevent="$root.submit();">
+                                @click.prevent="$root.submit();">
                         {{ __('Log Out') }}
                     </x-responsive-nav-link>
                 </form>
