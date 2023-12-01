@@ -5,7 +5,7 @@
 <p align="center">
     En este proyecto la meta es crear un crud de productos y categorias en tablas diferentes y unidas
 
-    En este proyecto se usa JetStream, Livewire y Tailwind
+    paquetes que se usan JetStream, Livewire y Tailwind
 
     nesesario:
     Laravel Framework 10.33.0
