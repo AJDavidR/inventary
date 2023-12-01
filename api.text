@@ -1,0 +1,23 @@
+los CRUD que tienes de productos y categorias conviertelos en API REST.
+Debes crear los siguientes Endpoint (Rutas de API):
+Products
+    index (Listar todos los productos)
+    store (Crear un producto) (Debes incluir la subida de imagen)
+    update (Actualizar un producto)
+    destroy (Eliminar un producto)
+
+Categorias
+    index (Listar todas las categorias)
+    store (Crear una categoria)
+    update (Actualziar una categoria)
+    destroy (Eliminar una categoria)
+
+El API debe cumplir la siguietes condiciones:
+
+    Un Controller por cada recurso (productos, categorias). DONE
+    Todos los metodos del controlador deben retornar una clase API Resource. DONE
+    Los metodos store y update de cada controlador debe tener su propio Form Request para validar los datos. DONE
+    Las rutas debe ser puestas en el archivo routes/api.php. DONE
+    Las rutas de cada recurso deben poseer su Verbo HTTP correcto (GET, POST, PUT, DELETE). DONE
+        Por ejemplo para listar todas las categorias se usa el Verbo HTTP GET.
+    La API debe ser probada en el programa Insomnia. DONE

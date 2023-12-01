@@ -37,7 +37,7 @@
                         <td class="border px-4 py-2">{{ $post->codigo }}</td>
                         <td class="border px-4 py-2">{{ $post->nombre }}</td>
                         <td class="border px-4 py-2">{{ $post->precio }}</td>
-                        <td class="border px-4 py-2"><img src="{{ asset($post->imagen) }}" alt="Imagen del post"></td>
+                        <td class="border px-4 py-2"><img src="{{ asset("storage/". $post->imagen) }}" alt="Imagen del post"></td>
                         <td class="border px-4 py-2">
                             @if($post->category)
                                 {{ $post->category->name }}
