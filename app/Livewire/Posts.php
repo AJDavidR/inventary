@@ -74,8 +74,6 @@ class Posts extends Component
             $this->validate();
 
             $imagePath = $this->imagen->store('files', 'public');
-
-            $imagePathWithPrefix = 'storage/' . $imagePath;
             //dd($imagePath);
             // $imagePath = $this->imagen ? $this->imagen->store(''files', 'public') : '';
             
@@ -84,7 +82,7 @@ class Posts extends Component
                 'codigo' => $this->codigo,
                 'nombre' => $this->nombre,
                 'precio' => $this->precio,
-                'imagen' => $imagePathWithPrefix,
+                'imagen' => $imagePath,
                 'category_id' => $this->category_id
             ]);
             
@@ -104,7 +102,7 @@ class Posts extends Component
         $this->precio = $post->precio;
         $this->imagen = $post->imagen;
         $this->category_id = $post->category_id;
-        dd($post->all());
+        // dd($post->all());
         $this->openModal();
     }
 
