@@ -1,7 +1,11 @@
-<h1 align="center">Proyecto Inventary</hi>
+<p>
+    <h1 align="center">Proyecto Inventary</hi>
+</p>
 
 <p align="center">
     En este proyecto la meta es crear un crud de productos y categorias en tablas diferentes y unidas
+
+    En este proyecto se usa JetStream, Livewire y Tailwind
 
     nesesario:
     Laravel Framework 10.33.0
@@ -20,7 +24,17 @@
     en categoria
     -nombre
 
-    cada tabla tiene su respectivo id y esta conectada por categoria de productos al id de la tabla categoria
+    cada tabla tiene su respectivo id y esta conectada por categoria
+     de productos al id de la tabla categoria
     ademas de tener una Api relacionada al proyecto
+
+    probremas y souluciones
+
+    En caso de problemas con "livewire file upload Path cannot be empty"
+	https://github.com/livewire/livewire/discussions/4329
+	Uncomment upload_tmp_dir  and set value to "C:/laragon/tmp" inside php.ini
+
+    
+
 
 </p>
